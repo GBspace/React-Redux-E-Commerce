@@ -1,0 +1,539 @@
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('/images/preloader.gif') no-repeat 50% 50%;
+    margin: -32px 0 0 -32px;
+}
+
+.view-container{
+    margin-top:20px;
+}
+.cart-order{
+    margin:0 auto;
+}
+.cart-order input{
+    text-align:right;
+}
+
+.book-list .thumbnail .caption{
+    position:relative;
+    z-index:40;
+}
+
+.caption{
+    min-height:165px;
+}
+
+
+
+.book-list figure {
+    position: relative;
+}
+.book-list .thumbnail img{
+    width:100%;
+}
+.book-list figure::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+    -webkit-transform: skewX(-25deg);
+    transform: skewX(-25deg);
+}
+.book-list:hover figure::before {
+    -webkit-animation: shine .9s;
+    animation: shine .9s;
+}
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.dropdown-menu td{
+    font-size: 12px;
+}
+.rating{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.rating li{
+    color: #ddd;
+    display: inline-block;
+    list-style-type: none;
+    padding: 1px;
+    text-shadow: .05em .05em #aaa;
+}
+.rating li.filled{
+    color: #d17581;
+}
+.itemButton{
+    margin-top: 20px;
+    text-align: center;
+}
+.blosd button{
+    cursor: default;
+}
+.rating li i{
+    font-family: 'Glyphicons Halflings';
+}
+.rating li i:before{
+    content: "\e006";
+}
+.rating.readonly li.filled{
+    color: #666;
+}
+.star-rating{
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+.star-rating .star{
+    color: #ddd;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    list-style-type: none;
+    padding: 1px;
+    text-shadow: .05em .05em #aaa;
+}
+.star-rating .star.filled{
+    color: #d17581;
+}
+.star-rating.readonly .star.filled{
+    color: #666;
+}
+.average-rating-container{
+    height: 16px;
+    overflow: hidden;
+    position: relative;
+    width: 80px;
+}
+.average-rating-container .background,
+.average-rating-container .foreground{
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+}
+.newRaiting li i{
+    color: #333;
+    cursor: default;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    moz-osx-font-smoothing: grayscale;
+    position: relative;
+    top: 1px;
+    webkit-font-smoothing: antialiased;
+}
+.newRaiting .star-rating li.star{
+    cursor: default;
+}
+.newRaiting li i:before{
+    content: "\e007";
+}
+.newRaiting li.filled i:before{
+    content: "\e006";
+}
+.average{
+    float: left;
+}
+.stars-reviews-raiting{
+    margin-left: 85px;
+}
+.last-ItemReviews hr{
+    display: none;
+}
+.thumbnail{
+    overflow: hidden;
+}
+.header{
+    color: #36A0FF;
+    font-size: 27px;
+    padding: 10px;
+}
+.reviews-forms{
+    display: none;
+}
+.bigicon{
+    font-size: 34px;
+}
+.delete-cart{
+    background: url(/images/trash_16x16.gif) no-repeat 0 0;
+    display: block;
+    height: 16px;
+    width: 16px;
+}
+.delete-cart:hover{
+    cursor: pointer;
+}
+.books .book-list{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+.well{
+    border-radius: 0 0 4px 4px;
+}
+.open>.dropdown-menu{
+    min-width: 100%;
+    z-index: 1001;
+}
+.open>.dropdown-menu > div,.open>.dropdown-menu{
+    background-color: #f9f9f9;
+    margin: 1px;
+}
+.open>.dropdown-menu .emty-cart{
+    text-align: center;
+}
+.open>.dropdown-menu .item-row div{
+    text-align: center;
+}
+.table-list{
+    text-align: center;
+    width: 100%;
+}
+.table-list td span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.table-list tr{
+    background-color: #f9f9f9;
+    border-bottom:1px solid gray;
+}
+.table-list tr td{
+    padding: 8px;
+}
+.item-checout .first-column-checkout{
+    width: 12%;
+}
+.item-checout td{
+    border-bottom: 1px solid #ddd;
+    border-top: none !important;
+    text-align: center;
+    vertical-align: middle !important;
+}
+.table-bordered{
+    border-collapse: separate;
+    border-radius: 4px;
+}
+.total-user-checkout{
+    margin-right: 20px;
+    margin-top: 15px;
+}
+.btn-user-checkout .btn{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.item-checout .delete-cart{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+.total{
+    margin: 5px 5px 5px 0;
+}
+.check-b{
+    margin: 0 5px 5px 0;
+}
+.modal-cart td{
+    border-bottom: 1px solid #ddd !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-top: none !important;
+}
+.modal .table-bordered{
+    border-bottom: none !important;
+}
+.bt-change-cart span.glyphicon{
+    cursor: pointer;
+}
+.x-change{
+    margin-right: 5px;
+}
+.modal-cart-total{
+    line-height: 34px;
+    margin-right: 15px;
+}
+.bt-shop{
+    text-align: center;
+}
+.top-m{
+    margin-top: 15px;
+}
+.dropdown .btn-inverse{
+    background:#50a8e1;
+    border:1px solid #2d6898;
+}
+.dropdown .btn-inverse:hover{
+    background:rgba(80,168,225,.9);
+}
+.btn-inverse{
+    background-color: #363636;
+    background-image: linear-gradient(to bottom,#444,#222);
+    background-image: -moz-linear-gradient(top,#444,#222);
+    background-image: -o-linear-gradient(top,#444,#222);
+    background-image: -webkit-gradient(linear,0 0,0 100%,from(#444),to(#222));
+    background-image: -webkit-linear-gradient(top,#444,#222);
+    background-repeat: repeat-x;
+    border-color: #222 #222 #000;
+    border-color: rgba(0,0,0,0.1) rgba(0,0,0,0.1) rgba(0,0,0,0.25);
+    border-radius: 0;
+    color: #fff;
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff444444',endColorstr='#ff222222',GradientType=0);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.25);
+}
+nav.navbar-inverse{
+    -webkit-box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.2) inset;
+    box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.2) inset;
+    background-color: #50a8e1;
+    border-color: #50a8e1;
+}
+nav.navbar-inverse a.navbar-brand,nav.navbar-inverse .navbar-nav>li>a{
+    color:#fff;
+}
+nav.navbar-inverse .navbar-nav>li>a:hover,nav.navbar-inverse .navbar-nav>li>a.Active{
+    background:#fff;
+    -webkit-box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.2) inset;
+    box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.2) inset;
+    color: #50a8e1;
+}
+
+.btn-inverse:hover{
+    background: #505050;
+}
+#dLabel{
+    color: #FFF;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+}
+.open #dLabel:hover{
+    color: #444;
+}
+.open #dLabel{
+    background-color: #FFFFFF;
+    background-image: none;
+    border: 1px solid #E6E6E6;
+    box-shadow: none;
+    color: #666;
+    text-shadow: none;
+}
+
+.form-group .help-block {
+    display: none;
+}
+
+.form-group.has-error .help-block {
+    display: block;
+}
+.column{
+    border-bottom:1px dashed #E5E5E5;
+    clear:both;
+    overflow: hidden;
+}
+.t-details{
+    font-size: 1em;
+    line-height: 20px;
+    width: 100%;
+    color: #CCC;
+    border-bottom:1px dashed #E5E5E5;
+    clear:both;
+    overflow: hidden;
+}
+.column .ab-details-title{
+    float:left;
+    font-size: 1.5em;
+    line-height: 50px;
+    color: #666;
+}
+.ab-details-info{
+    float: left;
+    line-height: 55px;
+    margin-left: 10px;
+    font-size:12px;
+    color: #777;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+}
+
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    /* width: 100%;*/
+    display:inline-block !important;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+footer {
+    margin: 50px 0;
+}
+
+
+@media only screen and (max-width : 1200px){
+}
+@media only screen and (max-width : 992px){
+}
+@media only screen and (max-width : 768px){
+}
+@media only screen and (max-width : 480px){
+}
+@media only screen and (max-width : 320px){
+}
+
+
+/*  ng-view Animation  */
+
+
+.view-slide-in.ng-enter{
+    left: 0;
+    moz-transition: all 1s ease;
+    opacity: 0.5;
+    opacity: 0;
+    o-transition: all 1s ease;
+    position: relative;
+    top: 25px;
+    transition: all 1s ease;
+    webkit-transition: all 1s ease;
+}
+.view-slide-in.ng-enter{
+    opacity: 0;
+}
+.view-slide-in.ng-enter.ng-enter-active{
+    left: 0;
+    opacity: 1;
+    top: 0;
+}
+.view-slide-in.ng-leave.ng-leave-active{
+    left: 0;
+    opacity: 1;
+    top: 25px;
+}
+.view-slide-in.ng-leave{
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+.book-list.class1.ng-enter,
+.book-list.class1.ng-leave,
+.book-list.class1.ng-move{
+    transition: 1s linear all;
+    webkit-transition: 1s linear all;
+}
+.book-list.class1.ng-enter-stagger,
+.book-list.class1.ng-leave-stagger,
+.book-list.class1.ng-move-stagger{
+    transition-delay: 10ms;
+    transition-duration: 0;
+    webkit-transition-delay: 10ms;
+    webkit-transition-duration: 0;
+}
+.book-list.class1.ng-enter,
+.book-list.class1.ng-move{
+    opacity: 0;
+}
+.book-list.class1.ng-enter.ng-enter-active,
+.book-list.class1.ng-move.ng-move-active{
+    opacity: 1;
+}
+.book-list.class1.ng-leave{
+    opacity: 1;
+}
+.book-list.class1.ng-leave.ng-leave-active{
+    opacity: 0;
+}
+
+.book-list.ng-enter {
+    -webkit-transition: .5s linear all; /* Safari/Chrome */
+    -moz-transition: .5s linear all; /* Firefox */
+    -o-transition: .5s linear all; /* Opera */
+    transition: .5s linear all; /* IE10+ and Future Browsers */
+
+    /* The animation preparation code */
+    opacity:0;
+    -moz-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    -o-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    transform: translateY(50px);
+}
+
+.book-list.ng-enter.ng-enter-active {
+    /* The animation code itself */
+    opacity:1;
+    -moz-transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    transform: translateY(0px);
+}
