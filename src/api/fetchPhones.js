@@ -4,12 +4,12 @@ import request from 'superagent';
 import mockCategories from './mockCategories';
 
 export const fetchPhones = async () =>{
-    // return new Promise(resolve =>{
-    //     resolve(phones);
-    // });
+    return new Promise(resolve =>{
+        resolve(phones);
+    });
 
-    const {body} = await request.get('http://www.mocky.io/v2/5918b9461200001f1040dbeb');
-    return body.phones;
+    // const {body} = await request.get('http://www.mocky.io/v2/5918b9461200001f1040dbeb');
+    // return body.phones;
 };
 
 export const loadMore = async ({offset}) => {
