@@ -9,7 +9,7 @@ Key features:
 3. Categorisation
 4. Real world API using superagent.
 5. Best practices of developing react application implemented.
-6. Add To Basket feture implemented.
+6. Add To Basket feature implemented.
 7. CRUD operations on the cart
 
 
